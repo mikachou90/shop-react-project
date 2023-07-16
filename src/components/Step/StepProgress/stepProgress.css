@@ -1,0 +1,31 @@
+.stepWrapper {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.progressLines {
+  display: flex;
+  align-items: center;
+}
+
+.progressBox {
+  display: flex;
+  align-items: center;
+}
+
+span.arrowLine {
+  width: 25px;
+  height: 1px;
+  background-color: grey;
+  margin: 0 10px 0 10px;
+}
+
+div.fake3 {
+  display: block;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
