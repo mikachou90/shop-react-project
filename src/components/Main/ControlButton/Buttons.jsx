@@ -1,5 +1,5 @@
 import React from "react";
-import "../ControlButton/Buttons.css";
+import "./Buttons.css";
 
 function Buttons() {
   return (

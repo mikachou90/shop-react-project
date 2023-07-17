@@ -1,5 +1,5 @@
 import React from "react";
-import "../Form/FormPayment.css";
+import "./FormPayment.css";
 
 function Form() {
   return (

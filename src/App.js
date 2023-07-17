@@ -1,8 +1,8 @@
 import React from "react";
 import "../src/App.css";
-import StepProgress from "./components/Step/StepProgress/StepProgress";
-import Form1 from "./components/Form/FormPayment";
-import Buttons from "./components/ControlButton/Buttons";
+import StepProgress from "../src/components/Main/Step/StepProgress/StepProgress";
+import Form1 from "../src/components/Main/Form/FormPayment";
+import Buttons from "../src/components/Main/ControlButton/Buttons";
 
 function App() {
   return (
