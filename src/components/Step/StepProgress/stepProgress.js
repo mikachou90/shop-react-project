@@ -1,5 +1,5 @@
 import React from "react";
-import "./stepProgress.css";
+import "./StepProgress.css";
 
 function StepProgress() {
   return (

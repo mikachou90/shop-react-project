@@ -1,6 +1,6 @@
 import React from "react";
 import "../src/App.css";
-import StepProgress from "./components/Step/StepProgress/stepProgress";
+import StepProgress from "./components/Step/StepProgress/StepProgress";
 import Form1 from "./components/Form/FormPayment";
 import Buttons from "./components/ControlButton/Buttons";
 
