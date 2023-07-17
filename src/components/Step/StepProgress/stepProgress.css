@@ -1,7 +1,12 @@
 .stepWrapper {
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  
+  padding: 10px 30px 10px 30px;
+}
+
+.icon {
+  margin-right: 10px;
 }
 
 .progressLines {
@@ -14,18 +19,24 @@
   align-items: center;
 }
 
+.progressBox img {
+  width: 18px;
+}
+
 span.arrowLine {
-  width: 25px;
-  height: 1px;
-  background-color: grey;
-  margin: 0 10px 0 10px;
+  width: 80px;
+  height: 1.5px;
+  background-color: rgb(60, 59, 59);
+  margin: 0 25px 0 25px;
 }
 
 div.fake3 {
   display: block;
-  text-align: center;
-  width: 25px;
-  height: 25px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   border: 1px solid black;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }

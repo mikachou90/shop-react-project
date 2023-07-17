@@ -3,8 +3,9 @@ import "../ControlButton/Buttons.css";
 
 function Buttons() {
   return (
-    <>
-      <div className="buttonWrapper">
+    <div className="buttonWrapper">
+      <hr />
+      <div className="buttons">
         <a className="backBtn" href="/">
           <img className="leftArrow" src="/icons/arrow-left.svg" alt="" />
           <p className="goBack">上一步</p>
@@ -14,7 +15,7 @@ function Buttons() {
           確認下單
         </button>
       </div>
-    </>
+    </div>
   );
 }
 

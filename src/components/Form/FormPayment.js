@@ -32,18 +32,9 @@ function Form() {
               <input
                 className="expiryNumber"
                 type="text"
-                name="month"
-                placeholder="MM"
-                maxlength="2"
-                size="2"
-              />
-              <span>/</span>
-              <input
-                className="expiryNumber"
-                type="text"
-                name="year"
-                placeholder="YY"
-                maxlength="2"
+                name="expiry"
+                placeholder="MM/YY"
+                maxlength="4"
                 size="2"
               />
             </div>
