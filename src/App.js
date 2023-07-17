@@ -6,16 +6,13 @@ import Buttons from "./components/ControlButton/Buttons";
 
 function App() {
   return (
-    <>
-      <div className="header">
-        <h1>Alpha Shop</h1>
-      </div>
+    <div>
       <div className="leftZone">
         <StepProgress />
         <Form1 />
         <Buttons />
       </div>
-    </>
+    </div>
   );
 }
 
