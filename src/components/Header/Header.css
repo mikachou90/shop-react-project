@@ -1,0 +1,34 @@
+div.header {
+  height: 50px;
+  padding: 0 80px 0 80px;}
+
+nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+
+a.link {
+  margin-right:80px ;
+  font-weight: 800;
+}
+
+
+div.logo {
+  margin-left: 20px;
+}
+
+div.navIcons {
+  width: 200px;
+  position: fixed;
+  right: 50px;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+img.logoImage {
+  height: 35px;
+}
