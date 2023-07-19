@@ -1,16 +1,16 @@
 import React from "react";
 import "./Main.css";
 import StepProgress from "./Step/StepProgress/StepProgress";
-import FormPayment from "./Form/FormPayment";
-import Buttons from "./ControlButton/Buttons";
+import Form from "./Form/Form";
+import ControlButton from "./ControlButton/ControlButton";
 
 function Main() {
   return (
     <div className="main">
       <div className="leftZone">
         <StepProgress />
-        <FormPayment />
-        <Buttons />
+        <Form />
+        <ControlButton />
       </div>
     </div>
   );

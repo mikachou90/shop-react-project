@@ -1,7 +1,7 @@
 import React from "react";
 import "./FormPayment.css";
 
-function Form() {
+function FormPayment() {
   return (
     <div className="formWrapper">
       <h3>付款資訊</h3>
@@ -55,4 +55,4 @@ function Form() {
   );
 }
 
-export default Form;
+export default FormPayment;
