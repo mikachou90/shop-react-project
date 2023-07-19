@@ -1,4 +1,3 @@
-import React from "react";
 import "./Main.css";
 import StepProgress from "./Step/StepProgress/StepProgress";
 import Form from "./Form/Form";
