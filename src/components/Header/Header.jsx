@@ -27,17 +27,24 @@ function Header() {
         </div>
 
         <div className="navIcons">
-          <img
-            className="searchIcon"
-            src="/icons/search.svg"
-            alt="searchIcon"
-          />
-          <img className="cartIcon" src="/icons/cart.svg" alt="cartIcon" />
-          <img
-            className="modeChangeIcon"
-            src="/icons/moon.svg"
-            alt="modeIcon"
-          />
+          <a href="/">
+            <img
+              className="searchIcon"
+              src="/icons/search.svg"
+              alt="searchIcon"
+            />
+          </a>
+          <a href="/">
+            <img className="cartIcon" src="/icons/cart.svg" alt="cartIcon" />
+          </a>
+
+          <a href="/">
+            <img
+              className="modeChangeIcon"
+              src="/icons/moon.svg"
+              alt="modeIcon"
+            />
+          </a>
         </div>
       </nav>
     </div>
