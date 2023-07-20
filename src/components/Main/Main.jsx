@@ -2,6 +2,7 @@ import "./Main.css";
 import StepProgress from "./Step/StepProgress/StepProgress";
 import Form from "./Form/Form";
 import ControlButton from "./ControlButton/ControlButton";
+import Cart from "./Cart/Cart";
 
 function Main() {
   return (
@@ -10,6 +11,9 @@ function Main() {
         <StepProgress />
         <Form />
         <ControlButton />
+      </div>
+      <div className="rightZone">
+        <Cart />
       </div>
     </div>
   );
