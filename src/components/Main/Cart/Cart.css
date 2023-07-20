@@ -1,5 +1,46 @@
-div.cartWrapper {
+div.cart {
 width: 500px;
 height: 100%;
   border: 1px solid red;
+}
+
+div.cartWrapper {
+  border: 1px solid rgb(207, 207, 206);
+  border-radius: 5px;
+  margin: 30px 20px;
+  padding: 10px 20px;
+  
+}
+
+div.item, div.itemInfo, div.addItem, div.shipFee, div.totalPrice {
+  display: flex;
+}
+
+div.itemRright {
+  /* border: 1px solid green; */
+  width: 300px;
+  margin-left: 10px;
+  padding: 0 5px ;
+}
+
+div.itemInfo {
+  justify-content: space-between;
+}
+
+div.addItem {
+  width: 150px;
+  justify-content: space-between;
+}
+
+img.itemPic {
+  width: 120px;
+  border-radius: 5px;
+}
+
+div.shipFee, div.totalPrice {
+  justify-content: space-between;
+}
+
+hr {
+  margin-top: 20px;
 }
