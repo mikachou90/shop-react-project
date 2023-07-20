@@ -15,10 +15,19 @@ div.item, div.itemInfo, div.addItem, div.shipFee, div.totalPrice {
   display: flex;
 }
 
+div.cartItems {
+margin-bottom: 30px;
+}
+
+div.item {
+  margin-bottom: 20px;
+}
+
+
 div.itemRright {
   /* border: 1px solid green; */
   width: 300px;
-  margin-left: 10px;
+  margin-left: 20px;
   padding: 0 5px ;
 }
 
@@ -37,9 +46,8 @@ img.itemPic {
 }
 
 div.shipFee, div.totalPrice {
+  margin-top: 20px;
   justify-content: space-between;
+  border-top: 1px solid rgb(216, 219, 222);
 }
 
-hr {
-  margin-top: 20px;
-}
