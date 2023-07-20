@@ -2,7 +2,7 @@ import "./Cart.css";
 import { Products } from "./Products";
 
 function Cart() {
-  const listItems = Products.map((product) => (
+  const renderItems = Products.map((product) => (
     <div className="item">
       <img className="itemPic" src={product.img} alt={product.name} />
       <div className="itemRright">
@@ -23,7 +23,7 @@ function Cart() {
     <div className="cart">
       <div className="cartWrapper">
         <h3>購物籃</h3>
-        <div className="cartItems">{listItems}</div>
+        <div className="cartItems">{renderItems}</div>
 
         <div className="shipFee">
           <h5>運費</h5>
