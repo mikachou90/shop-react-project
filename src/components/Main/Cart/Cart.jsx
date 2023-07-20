@@ -1,8 +1,8 @@
 import "./Cart.css";
-import { Products } from "./Products";
+import { ProductData } from "./ProductData";
 
 function Cart() {
-  const renderItems = Products.map((product) => (
+  const renderItems = ProductData.map((product) => (
     <div className="item">
       <img className="itemPic" src={product.img} alt={product.name} />
       <div className="itemRright">
