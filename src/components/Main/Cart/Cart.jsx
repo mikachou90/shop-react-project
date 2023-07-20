@@ -1,29 +1,22 @@
 import "./Cart.css";
 import { ProductData } from "./ProductData";
+import RenderItem from "./RenderItem";
 
 function Cart() {
-  const renderItems = ProductData.map((product) => (
-    <div className="item">
-      <img className="itemPic" src={product.img} alt={product.name} />
-      <div className="itemRright">
-        <div className="itemInfo">
-          <h5>{product.name}</h5>
-          <h5>${product.price}</h5>
-        </div>
-        <div className="addItem">
-          <img src="/icons/minus.svg" alt="" />
-          <p>{product.quantity}</p>
-          <img src="/icons/plus.svg" alt="" />
-        </div>
-      </div>
-    </div>
-  ));
-
   return (
     <div className="cart">
       <div className="cartWrapper">
         <h3>購物籃</h3>
-        <div className="cartItems">{renderItems}</div>
+        <div className="cartItems">
+          {ProductData.map((product) => (
+            <RenderItem
+              name={product.name}
+              img={product.img}
+              price={product.price}
+              quantity={product.quantity}
+            />
+          ))}
+        </div>
 
         <div className="shipFee">
           <h5>運費</h5>
