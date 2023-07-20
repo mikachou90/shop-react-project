@@ -1,24 +1,8 @@
 import "./Cart.css";
-
-const products = [
-  {
-    id: "1",
-    name: "貓咪罐罐",
-    img: "https://picsum.photos/300/300?text=1",
-    price: 100,
-    quantity: 2,
-  },
-  {
-    id: "2",
-    name: "貓咪干干",
-    img: "https://picsum.photos/300/300?text=2",
-    price: 200,
-    quantity: 1,
-  },
-];
+import { Products } from "./Products";
 
 function Cart() {
-  const listItems = products.map((product) => (
+  const listItems = Products.map((product) => (
     <div className="item">
       <img className="itemPic" src={product.img} alt={product.name} />
       <div className="itemRright">
