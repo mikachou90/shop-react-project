@@ -1,6 +1,6 @@
 import "./Cart.css";
-import { ProductData } from "./ProductData";
-import RenderItem from "./RenderItem";
+import { CartProductData } from "./CartProductData";
+import CartRenderItem from "./CartRenderItem";
 
 function Cart() {
   return (
@@ -8,8 +8,8 @@ function Cart() {
       <div className="cartWrapper">
         <h3>購物籃</h3>
         <div className="cartItems">
-          {ProductData.map((product) => (
-            <RenderItem
+          {CartProductData.map((product) => (
+            <CartRenderItem
               name={product.name}
               img={product.img}
               price={product.price}

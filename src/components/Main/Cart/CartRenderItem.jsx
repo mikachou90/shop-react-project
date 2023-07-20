@@ -1,4 +1,4 @@
-const RenderItem = ({ img, name, price, quantity }) => {
+const CartRenderItem = ({ img, name, price, quantity }) => {
   return (
     <div className="item">
       <img className="itemPic" src={img} alt={name} />
@@ -17,4 +17,4 @@ const RenderItem = ({ img, name, price, quantity }) => {
   );
 };
 
-export default RenderItem;
+export default CartRenderItem;
