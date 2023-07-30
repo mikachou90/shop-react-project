@@ -13,8 +13,11 @@ div.buttons {
 }
 
 
-.backBtn {
+button.backBtn {
+border: none;
+background: none;
 display: flex;
+align-items: center;
 }
 
 img.leftArrow {
@@ -22,7 +25,19 @@ img.leftArrow {
   margin-right: 10px;
 }
 
-button.confirm {
+
+button.nextBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img.rightArrow {
+  width: 20px;
+  margin-left: 10px;
+}
+
+button.confirm, button.nextBtn {
   width: 150px;
   height: 40px;
   border-radius: 5px;
