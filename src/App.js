@@ -17,7 +17,7 @@ function App() {
   }
 
   return (
-    <div>
+    <>
       <Header />
       <div className="main">
         <div className="leftZone">
@@ -30,7 +30,7 @@ function App() {
         </div>
       </div>
       <Footer />
-    </div>
+    </>
   );
 }
 

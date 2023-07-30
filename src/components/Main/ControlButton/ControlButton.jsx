@@ -1,5 +1,5 @@
 import "./ControlButton.css";
-// import { ReactComponent as RightArrow } from "../../../../public/icons/arrow-right.svg";
+import { ReactComponent as RightArrow } from "../../../arrow-right.svg";
 
 function ControlButton({ formStep, setFormStep }) {
   return (
@@ -20,7 +20,8 @@ function ControlButton({ formStep, setFormStep }) {
         ) : (
           <button className="nextBtn" onClick={() => setFormStep(formStep + 1)}>
             <p className="goBack">下一步</p>
-            {/* <RightArrow className="rightArrow" /> */}
+            {/* <img className="rightArrow" src="/icons/arrow-right.svg" alt="" /> */}
+            <RightArrow className="rightArrow" />
           </button>
         )}
       </div>

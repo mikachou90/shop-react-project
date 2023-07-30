@@ -46,7 +46,7 @@ function Cart() {
 
         <div className="totalPrice">
           <h5>小計</h5>
-          <h5>{totalValuesItems}</h5>
+          <h5>${totalValuesItems}</h5>
         </div>
       </div>
     </div>

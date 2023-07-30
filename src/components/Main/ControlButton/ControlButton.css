@@ -32,9 +32,10 @@ button.nextBtn {
   justify-content: center;
 }
 
-img.rightArrow {
+.rightArrow {
   width: 20px;
   margin-left: 10px;
+  fill : white; 
 }
 
 button.confirm, button.nextBtn {
