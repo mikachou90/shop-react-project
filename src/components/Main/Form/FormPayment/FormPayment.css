@@ -1,5 +1,6 @@
-div.formWrapper {
+div.formPaymentWrapper {
   padding: 10px 30px 10px 30px;
+  margin-bottom: 20px;
 }
 
 
@@ -9,7 +10,7 @@ form label {
   color: rgb(139, 134, 134)
 }
 
-input.inputName, input.inputCreditCard {
+#name, .inputCreditCard {
   width: 350px;
   height: 25px;
 }

@@ -2,7 +2,7 @@ import "./FormPayment.css";
 
 function FormPayment() {
   return (
-    <div className="formWrapper">
+    <div className="formPaymentWrapper">
       <h3>付款資訊</h3>
       <form>
         <div className="nameBox">
