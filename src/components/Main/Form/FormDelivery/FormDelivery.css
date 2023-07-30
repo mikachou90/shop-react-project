@@ -1,3 +1,7 @@
+div.formDeliveryWrapper {
+  padding: 20px 20px;
+  margin-bottom: 20px;
+}
 
 div.option {
   border: 1px solid rgb(191, 191, 191);
@@ -6,7 +10,6 @@ div.option {
   padding: 5px 20px ;
   margin-bottom: 20px;
   position: relative;
-
 }
 
 div.description {

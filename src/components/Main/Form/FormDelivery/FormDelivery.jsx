@@ -2,7 +2,7 @@ import "./FormDelivery.css";
 
 function FormDelivery() {
   return (
-    <div className="formWrapper">
+    <div className="formDeliveryWrapper">
       <h3>運送方式</h3>
       <form action="">
         <div className="option">
@@ -13,6 +13,7 @@ function FormDelivery() {
           </div>
           <p className="fee">免費</p>
         </div>
+
         <div className="option">
           <input type="radio" />
           <div className="description">
