@@ -1,18 +1,26 @@
 import "./ControlButton.css";
 
-function ControlButton() {
+function ControlButton({ formStep, setFormStep }) {
   return (
     <div className="buttonWrapper">
       <hr />
       <div className="buttons">
-        <a className="backBtn" href="/">
-          <img className="leftArrow" src="/icons/arrow-left.svg" alt="" />
-          <p className="goBack">上一步</p>
-        </a>
+        {formStep > 1 && (
+          <button className="backBtn" onClick={() => setFormStep(formStep - 1)}>
+            <img className="leftArrow" src="/icons/arrow-left.svg" alt="" />
+            <p className="goBack">Back</p>
+          </button>
+        )}
 
-        <button className="confirm" type="submit">
-          確認下單
-        </button>
+        {formStep === 3 ? (
+          <button className="confirm" onClick={() => console.log(" finish ")}>
+            Confirm
+          </button>
+        ) : (
+          <button className="confirm" onClick={() => setFormStep(formStep + 1)}>
+            Next
+          </button>
+        )}
       </div>
     </div>
   );

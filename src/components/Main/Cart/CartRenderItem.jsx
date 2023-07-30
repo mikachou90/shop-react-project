@@ -1,4 +1,4 @@
-const CartRenderItem = ({ img, name, price, quantity }) => {
+const CartRenderItem = ({ handleQtyChange, img, name, price, quantity }) => {
   return (
     <div className="item">
       <img className="itemPic" src={img} alt={name} />
@@ -8,9 +8,17 @@ const CartRenderItem = ({ img, name, price, quantity }) => {
           <h5>${price}</h5>
         </div>
         <div className="addItem">
-          <img src="/icons/minus.svg" alt="" />
+          <img
+            src="/icons/minus.svg"
+            alt=""
+            onClick={() => handleQtyChange(quantity - 1)}
+          />
           <p>{quantity}</p>
-          <img src="/icons/plus.svg" alt="" />
+          <img
+            src="/icons/plus.svg"
+            alt=""
+            onClick={() => handleQtyChange(quantity + 1)}
+          />
         </div>
       </div>
     </div>

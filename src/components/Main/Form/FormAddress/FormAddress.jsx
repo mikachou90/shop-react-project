@@ -4,8 +4,12 @@ import { FormAdressData } from "./FormAdressData";
 function SelectGenderRender({ data }) {
   return (
     <select name="title" id="title" className="selectGender" required>
-      {data.map((gender) => {
-        return <option value={gender.value}>{gender.type}</option>;
+      {data.map((gender, key) => {
+        return (
+          <option key={key} value={gender.value}>
+            {gender.type}
+          </option>
+        );
       })}
     </select>
   );
@@ -14,8 +18,12 @@ function SelectGenderRender({ data }) {
 function SelectCityRender({ data }) {
   return (
     <select name="city" id="city" className="selectCity" required>
-      {data.map((city) => {
-        return <option value={city.value}>{city.name}</option>;
+      {data.map((city, key) => {
+        return (
+          <option key={key} value={city.value}>
+            {city.name}
+          </option>
+        );
       })}
     </select>
   );
