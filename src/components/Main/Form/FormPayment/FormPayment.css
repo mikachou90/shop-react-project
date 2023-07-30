@@ -9,7 +9,7 @@ form label {
   color: rgb(139, 134, 134)
 }
 
-#name, #creditCard {
+input.inputName, input.inputCreditCard {
   width: 350px;
   height: 25px;
 }

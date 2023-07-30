@@ -7,12 +7,13 @@ function FormPayment() {
       <form>
         <div className="nameBox">
           <label htmlFor="name">持卡人姓名</label>
-          <input name="name" id="name" type="text" />
+          <input name="name" id="name" type="text" className="inputName" />
         </div>
 
         <div className="creditCardBox">
           <label htmlFor="creditCard">信用卡號</label>
           <input
+            className="inputCreditCard"
             name="creditCard"
             id="creditCard"
             type="tel"

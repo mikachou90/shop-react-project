@@ -1,0 +1,52 @@
+
+ div.title, div.fullname, div.phone, div.email, div.city, div.address {
+  display: flex;
+  flex-direction: column;
+} 
+
+ div.title label,
+ div.fullname label,
+ div.phone label,
+ div.email label,
+ div.city label,
+ div.address label {
+margin-bottom: 10px;
+
+ }
+
+
+
+div.input1, div.input2, div.input3 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input.inputFullname, input.inputPhone, input.inputEmail, input.inputAddress {
+  height: 30px;
+  border: 1px solid rgb(170, 170, 170);
+  border-radius: 5px;
+}
+
+input.inputFullname, input.inputAddress {
+  width: 330px;
+}
+
+input.inputPhone,
+input.inputEmail {
+  width: 250px;
+}
+
+input.inputPhone {
+  margin-right: 35px;
+}
+
+select.selectGender, select.selectCity {
+  appearance: none;
+  height: 35px;
+  width: 180px;
+  padding: 5px;
+  margin-right: 30px;
+  border: 1px solid rgb(170, 170, 170);
+    border-radius: 5px;
+}
