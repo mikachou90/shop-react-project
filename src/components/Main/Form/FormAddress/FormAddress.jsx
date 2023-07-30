@@ -31,7 +31,7 @@ function SelectCityRender({ data }) {
 
 function FormAddress() {
   return (
-    <div className="formWrapper">
+    <div className="formAddressWrapper">
       <h3>寄送地址</h3>
       <form className="form">
         <div className="input1">

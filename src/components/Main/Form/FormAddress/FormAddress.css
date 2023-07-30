@@ -1,3 +1,6 @@
+div.formAddressWrapper {
+  padding: 10px 30px 10px 30px;
+}
 
  div.title, div.fullname, div.phone, div.email, div.city, div.address {
   display: flex;
