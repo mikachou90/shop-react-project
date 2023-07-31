@@ -1,3 +1,5 @@
+import { getFormattedPrice } from "../../../utils/pricing";
+
 const CartRenderItem = ({ handleQtyChange, img, name, price, quantity }) => {
   return (
     <div className="item">
@@ -5,7 +7,7 @@ const CartRenderItem = ({ handleQtyChange, img, name, price, quantity }) => {
       <div className="itemRright">
         <div className="itemInfo">
           <h5>{name}</h5>
-          <h5>${price}</h5>
+          <h5>單價: NTD {price}</h5>
         </div>
         <div className="addItem">
           <img
@@ -19,6 +21,7 @@ const CartRenderItem = ({ handleQtyChange, img, name, price, quantity }) => {
             alt=""
             onClick={() => handleQtyChange(quantity + 1)}
           />
+          <h5>{getFormattedPrice(price * quantity)}</h5>
         </div>
       </div>
     </div>

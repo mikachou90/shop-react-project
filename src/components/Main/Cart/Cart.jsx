@@ -2,6 +2,7 @@ import "./Cart.css";
 import cartProductData from "./cartProductData";
 import CartRenderItem from "./CartRenderItem";
 import { useState } from "react";
+import { getFormattedPrice } from "../../../utils/pricing";
 
 function Cart() {
   const [currentItems, setCurrentItems] = useState(cartProductData);
@@ -19,11 +20,7 @@ function Cart() {
   const totalValuesItems = currentItems.reduce((acc, val) => {
     return acc.quantity * acc.price + val.quantity * val.price;
   });
-  const formattedTotalValuesItems = new Intl.NumberFormat("zh-TW", {
-    style: "currency",
-    currency: "NTD",
-    maximumFractionDigits: 0,
-  }).format(totalValuesItems);
+  const formattedTotalValuesItems = getFormattedPrice(totalValuesItems);
 
   return (
     <div className="cart">
