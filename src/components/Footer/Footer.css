@@ -6,8 +6,6 @@ div.footer {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  position: absolute;
-  bottom: 0px;
 }
 
 div.footerLogo {
@@ -18,7 +16,6 @@ div.footerLogo {
 
 img.footerLogo {
   width: 200px;
-  /*img預設display:inline*/
   display: block;
   margin-right: 120px;
 }
