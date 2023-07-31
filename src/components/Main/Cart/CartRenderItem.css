@@ -5,6 +5,7 @@ div.addItem {
 
 div.btnItems {
   display: flex;
+  align-items: center;
 
 }
 
@@ -12,6 +13,6 @@ h5.currentPrice {
   color: rgb(227, 140, 140)
 }
 
-img.minusIcon, p.qtyRender, img.plusIcon {
-  margin-right: 25px;
+ p.qtyRender {
+  margin:0 30px;
 }
