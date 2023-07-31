@@ -19,6 +19,11 @@ function Cart() {
   const totalValuesItems = currentItems.reduce((acc, val) => {
     return acc.quantity * acc.price + val.quantity * val.price;
   });
+  const formattedTotalValuesItems = new Intl.NumberFormat("zh-TW", {
+    style: "currency",
+    currency: "NTD",
+    maximumFractionDigits: 0,
+  }).format(totalValuesItems);
 
   return (
     <div className="cart">
@@ -46,7 +51,7 @@ function Cart() {
 
         <div className="totalPrice">
           <h5>小計</h5>
-          <h5>${totalValuesItems}</h5>
+          <h5>{formattedTotalValuesItems}</h5>
         </div>
       </div>
     </div>
