@@ -7,15 +7,14 @@ div.formAddressWrapper {
   flex-direction: column;
 } 
 
- div.title label,
- div.fullname label,
- div.phone label,
- div.email label,
- div.city label,
- div.address label {
-margin-bottom: 10px;
-
- }
+div.title label,
+div.fullname label,
+div.phone label,
+div.email label,
+div.city label,
+div.address label {
+  margin-bottom: 10px;
+}
 
 
 
@@ -51,5 +50,5 @@ select.selectGender, select.selectCity {
   padding: 5px;
   margin-right: 30px;
   border: 1px solid rgb(170, 170, 170);
-    border-radius: 5px;
+  border-radius: 5px;
 }

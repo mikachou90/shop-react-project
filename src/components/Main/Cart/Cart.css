@@ -1,6 +1,6 @@
 div.cart {
-width: 500px;
-height: 100%;
+  width: 500px;
+  height: 100%;
 }
 
 div.cartWrapper {
@@ -16,7 +16,7 @@ div.item, div.itemInfo, div.addItem, div.shipFee, div.totalPrice {
 }
 
 div.cartItems {
-margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 div.item {
@@ -25,7 +25,6 @@ div.item {
 
 
 div.itemRright {
-  /* border: 1px solid green; */
   width: 300px;
   margin-left: 20px;
   padding: 0 5px ;

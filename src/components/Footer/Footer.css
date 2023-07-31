@@ -34,7 +34,7 @@ div.footerLinks p {
 }
 
 
-   .serves, .aboutUs, .info, .followUs {
+.serves, .aboutUs, .info, .followUs {
   display: flex;
   flex-direction: column;
 }

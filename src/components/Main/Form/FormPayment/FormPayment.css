@@ -32,6 +32,6 @@ input.expiryNumber, input.cvcNumber {
 }
 
 .cvcBox {
-margin-left: 60px;
+  margin-left: 60px;
 }
 
