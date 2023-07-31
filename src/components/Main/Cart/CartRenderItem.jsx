@@ -1,4 +1,5 @@
 import { getFormattedPrice } from "../../../utils/pricing";
+import "./CartRenderItem.css";
 
 const CartRenderItem = ({ handleQtyChange, img, name, price, quantity }) => {
   return (
@@ -21,7 +22,9 @@ const CartRenderItem = ({ handleQtyChange, img, name, price, quantity }) => {
             alt=""
             onClick={() => handleQtyChange(quantity + 1)}
           />
-          <h5>{getFormattedPrice(price * quantity)}</h5>
+          <h5 className="currentPrice">
+            {getFormattedPrice(price * quantity)}
+          </h5>
         </div>
       </div>
     </div>

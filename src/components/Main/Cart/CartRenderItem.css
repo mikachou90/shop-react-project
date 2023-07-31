@@ -1,0 +1,9 @@
+div.addItem {
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+}
+
+h5.currentPrice {
+  color: rgb(227, 140, 140)
+}
