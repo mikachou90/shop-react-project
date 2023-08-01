@@ -1,5 +1,5 @@
 import "./FormAddress.css";
-import { formAdressData } from "./FormAdressData";
+import { FormAdressData } from "./FormAdressData";
 
 function SelectGenderRender({ data }) {
   return (
@@ -37,7 +37,7 @@ function FormAddress() {
         <div className="input1">
           <div className="title">
             <label id="title">稱謂</label>
-            <SelectGenderRender data={formAdressData.gender} />
+            <SelectGenderRender data={FormAdressData.gender} />
           </div>
           <div className="fullname">
             <label id="name">姓名</label>
@@ -74,7 +74,7 @@ function FormAddress() {
         <div className="input3">
           <div className="city">
             <label id="city">縣市</label>
-            <SelectCityRender data={formAdressData.city} />
+            <SelectCityRender data={FormAdressData.city} />
           </div>
           <div className="address">
             <label id="address">地址</label>
