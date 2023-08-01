@@ -1,4 +1,4 @@
-export const FormAdressData = {
+export const formAdressData = {
   gender: [
     { value: "", type: "請選擇稱謂" },
     { value: "mr", type: "先生" },
