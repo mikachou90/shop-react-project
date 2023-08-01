@@ -6,7 +6,10 @@ div.addItem {
 div.btnItems {
   display: flex;
   align-items: center;
+}
 
+div.btnItems img {
+  cursor: pointer;
 }
 
 h5.currentPrice {

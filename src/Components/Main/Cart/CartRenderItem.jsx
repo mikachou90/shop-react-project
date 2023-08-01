@@ -13,14 +13,12 @@ const CartRenderItem = ({ handleQtyChange, img, name, price, quantity }) => {
         <div className="addItem">
           <div className="btnItems">
             <img
-              className="minusIcon"
               src="/icons/minus.svg"
               alt=""
               onClick={() => handleQtyChange(quantity - 1)}
             />
             <p className="qtyRender">{quantity}</p>
             <img
-              className="plusIcon"
               src="/icons/plus.svg"
               alt=""
               onClick={() => handleQtyChange(quantity + 1)}
