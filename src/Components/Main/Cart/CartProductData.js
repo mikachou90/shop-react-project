@@ -1,4 +1,4 @@
-const cartProductData = [
+const CartProductData = [
   {
     id: "1",
     name: "貓咪罐罐",
@@ -15,4 +15,4 @@ const cartProductData = [
   },
 ];
 
-export default cartProductData;
+export default CartProductData;

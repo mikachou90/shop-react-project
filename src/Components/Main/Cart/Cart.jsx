@@ -1,11 +1,11 @@
 import "./Cart.css";
-import cartProductData from "./cartProductData";
+import CartProductData from "./CartProductData";
 import CartRenderItem from "./CartRenderItem";
 import { useState } from "react";
 import { getFormattedPrice } from "Utils/pricing";
 
 function Cart() {
-  const [currentItems, setCurrentItems] = useState(cartProductData);
+  const [currentItems, setCurrentItems] = useState(CartProductData);
 
   function changeItemsValues(productId, newQty) {
     const newCurrentItems = currentItems.map((item) => {
