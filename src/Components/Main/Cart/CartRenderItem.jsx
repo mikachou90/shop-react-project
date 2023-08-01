@@ -1,4 +1,4 @@
-import { getFormattedPrice } from "../../../utils/pricing";
+import { getFormattedPrice } from "Utils/pricing";
 import "./CartRenderItem.css";
 
 const CartRenderItem = ({ handleQtyChange, img, name, price, quantity }) => {

@@ -2,7 +2,7 @@ import "./Cart.css";
 import cartProductData from "./cartProductData";
 import CartRenderItem from "./CartRenderItem";
 import { useState } from "react";
-import { getFormattedPrice } from "../../../utils/pricing";
+import { getFormattedPrice } from "Utils/pricing";
 
 function Cart() {
   const [currentItems, setCurrentItems] = useState(cartProductData);

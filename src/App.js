@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "../src/App.css";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import StepProgress from "./components/Main/Step/StepProgress/StepProgress";
-import Form from "./components/Main/Form/Form";
-import ControlButton from "./components/Main/ControlButton/ControlButton";
-import Cart from "./components/Main/Cart/Cart";
+import Header from "Components/Header/Header";
+import Footer from "Components/Footer/Footer";
+import StepProgress from "Components/Main/Step/StepProgress/StepProgress";
+import Form from "Components/Main/Form/Form";
+import ControlButton from "Components/Main/ControlButton/ControlButton";
+import Cart from "Components/Main/Cart/Cart";
 
 function App() {
   const [formStep, setFormStep] = useState(1);
