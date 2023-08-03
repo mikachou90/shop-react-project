@@ -1,11 +1,12 @@
 import "./Cart.css";
-import CartProductData from "./CartProductData";
 import CartRenderItem from "./CartRenderItem";
-import { useState } from "react";
+import { useContext } from "react";
 import { getFormattedPrice } from "Utils/pricing";
+import CartContext from "./CartContext";
 
 function Cart() {
-  const [currentItems, setCurrentItems] = useState(CartProductData);
+  const { currentItems, setCurrentItems, totalValuesItems } =
+    useContext(CartContext);
 
   function changeItemsValues(productId, newQty) {
     const newCurrentItems = currentItems.map((item) => {
@@ -17,9 +18,6 @@ function Cart() {
     setCurrentItems(newCurrentItems);
   }
 
-  const totalValuesItems = currentItems.reduce((acc, val) => {
-    return acc.quantity * acc.price + val.quantity * val.price;
-  });
   const formattedTotalValuesItems = getFormattedPrice(totalValuesItems);
 
   return (
@@ -30,10 +28,7 @@ function Cart() {
           {currentItems.map((product) => (
             <CartRenderItem
               key={product.id}
-              name={product.name}
-              img={product.img}
-              price={product.price}
-              quantity={product.quantity}
+              product={product}
               handleQtyChange={(newQty) => {
                 changeItemsValues(product.id, newQty);
               }}

@@ -6,6 +6,8 @@ import StepProgress from "Components/Main/Step/StepProgress/StepProgress";
 import Form from "Components/Main/Form/Form";
 import ControlButton from "Components/Main/ControlButton/ControlButton";
 import Cart from "Components/Main/Cart/Cart";
+import { CartProvider } from "Components/Main/Cart/CartContext";
+import { FormContextProvider } from "Components/Main/Form/FormContext";
 
 function App() {
   const [formStep, setFormStep] = useState(1);
@@ -19,16 +21,20 @@ function App() {
   return (
     <>
       <Header />
-      <div className="main">
-        <div className="leftZone">
-          <StepProgress formStep={formStep} />
-          <Form formStep={formStep} />
-          <ControlButton formStep={formStep} setFormStep={setStep} />
+      <CartProvider>
+        <div className="main">
+          <div className="leftZone">
+            <StepProgress formStep={formStep} />
+            <FormContextProvider>
+              <Form formStep={formStep} />
+              <ControlButton formStep={formStep} setFormStep={setStep} />
+            </FormContextProvider>
+          </div>
+          <div className="rightZone">
+            <Cart />
+          </div>
         </div>
-        <div className="rightZone">
-          <Cart />
-        </div>
-      </div>
+      </CartProvider>
       <Footer />
     </>
   );

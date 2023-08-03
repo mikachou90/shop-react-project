@@ -13,7 +13,11 @@ function ControlButton({ formStep, setFormStep }) {
         )}
 
         {formStep === 3 ? (
-          <button className="confirm" onClick={() => console.log(" finish ")}>
+          <button
+            className="confirm"
+            onClick={() => console.log(" finish ")}
+            type="submit"
+          >
             確認下單
           </button>
         ) : (
