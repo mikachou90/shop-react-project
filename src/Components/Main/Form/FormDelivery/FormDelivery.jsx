@@ -3,7 +3,7 @@ import { useContext } from "react";
 import FormContext from "../FormContext";
 
 function FormDelivery({ isDisplay }) {
-  const { deliveryFeeHandler } = useContext(FormContext);
+  const { infoUpdateHandler } = useContext(FormContext);
   return (
     <div
       className="formDeliveryWrapper"
@@ -16,13 +16,13 @@ function FormDelivery({ isDisplay }) {
             type="radio"
             value="0"
             name="deliveryFee"
-            onChange={deliveryFeeHandler}
+            onChange={infoUpdateHandler}
           />
           <div className="description">
             <p>標準運送</p>
             <p>約3~7個工作天</p>
           </div>
-          <p className="fee">0</p>
+          <p className="fee">免費</p>
         </div>
 
         <div className="option">
@@ -30,7 +30,7 @@ function FormDelivery({ isDisplay }) {
             type="radio"
             value="500"
             name="deliveryFee"
-            onChange={deliveryFeeHandler}
+            onChange={infoUpdateHandler}
           />
           <div className="description">
             <p>DHL貨運</p>

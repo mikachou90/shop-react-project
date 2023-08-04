@@ -19,9 +19,13 @@ function Form() {
       <form
         action=""
         onSubmit={(e) => {
+          console.log(e);
           e.preventDefault();
           console.log("您輸入的資料:", info);
-          console.log("總金額:", getFormattedPrice(totalValuesItems));
+          console.log(
+            "總金額:",
+            getFormattedPrice(totalValuesItems + Number(info.deliveryFee))
+          );
         }}
       >
         <FormAddress isDisplay={formStep === 1} />

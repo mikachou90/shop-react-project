@@ -3,10 +3,13 @@ import CartRenderItem from "./CartRenderItem";
 import { useContext } from "react";
 import { getFormattedPrice } from "Utils/pricing";
 import CartContext from "./CartContext";
+import FormContext from "../Form/FormContext";
 
 function Cart() {
   const { currentItems, setCurrentItems, totalValuesItems } =
     useContext(CartContext);
+
+  const { info } = useContext(FormContext);
 
   function changeItemsValues(productId, newQty) {
     const newCurrentItems = currentItems.map((item) => {
@@ -18,7 +21,12 @@ function Cart() {
     setCurrentItems(newCurrentItems);
   }
 
-  const formattedTotalValuesItems = getFormattedPrice(totalValuesItems);
+  console.log({ deliveryFee: info.deliveryFee, totalValuesItems });
+
+  const totalPrice = Number(info.deliveryFee)
+    ? Number(info.deliveryFee) + totalValuesItems
+    : totalValuesItems;
+  const formattedTotalValuesItems = getFormattedPrice(totalPrice);
 
   return (
     <div className="cart">
@@ -38,7 +46,7 @@ function Cart() {
 
         <div className="shipFee">
           <h5>運費</h5>
-          <h5>免費</h5>
+          <h5>{getFormattedPrice(Number(info.deliveryFee))}</h5>
         </div>
 
         <div className="totalPrice">
