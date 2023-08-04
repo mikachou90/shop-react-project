@@ -1,4 +1,5 @@
 import "./FormDelivery.css";
+import { getFormattedPrice } from "Utils/pricing";
 import { useContext } from "react";
 import FormContext from "../FormContext";
 
@@ -36,7 +37,7 @@ function FormDelivery({ isDisplay }) {
             <p>DHL貨運</p>
             <p>48小時內送達</p>
           </div>
-          <p className="fee">$500</p>
+          <p className="fee">{getFormattedPrice(500)}</p>
         </div>
       </div>
     </div>
