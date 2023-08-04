@@ -50,3 +50,24 @@ div.shipFee, div.totalPrice {
   border-top: 1px solid rgb(216, 219, 222);
 }
 
+div.addItem {
+  width: 280px;
+  display: flex;
+}
+
+div.btnItems {
+  display: flex;
+  align-items: center;
+}
+
+div.btnItems img {
+  cursor: pointer;
+}
+
+h5.currentPrice {
+  color: rgb(227, 140, 140)
+}
+
+p.qtyRender {
+  margin: 0 30px;
+}
