@@ -1,12 +1,20 @@
 import "./FormAddress.css";
 import { FormAdressData } from "./FormAdressData";
+import { useContext } from "react";
+import FormContext from "../FormContext";
 
 function SelectGenderRender({ data }) {
+  const { infoUpdateHandler } = useContext(FormContext);
   return (
-    <select name="title" id="title" className="selectGender" required>
+    <select
+      name="title"
+      id="title"
+      className="selectGender"
+      onChange={infoUpdateHandler}
+    >
       {data.map((gender, key) => {
         return (
-          <option key={key} value={gender.value}>
+          <option key={key} value={gender.value} name="tilte">
             {gender.type}
           </option>
         );
@@ -16,11 +24,17 @@ function SelectGenderRender({ data }) {
 }
 
 function SelectCityRender({ data }) {
+  const { infoUpdateHandler } = useContext(FormContext);
   return (
-    <select name="city" id="city" className="selectCity" required>
+    <select
+      name="city"
+      id="city"
+      className="selectCity"
+      onChange={infoUpdateHandler}
+    >
       {data.map((city, key) => {
         return (
-          <option key={key} value={city.value}>
+          <option key={key} value={city.value} name="cityName">
             {city.name}
           </option>
         );
@@ -29,11 +43,15 @@ function SelectCityRender({ data }) {
   );
 }
 
-function FormAddress() {
+function FormAddress({ isDisplay }) {
+  const { infoUpdateHandler } = useContext(FormContext);
   return (
-    <div className="formAddressWrapper">
+    <div
+      className="formAddressWrapper"
+      style={{ display: isDisplay ? "block" : "none" }}
+    >
       <h3>寄送地址</h3>
-      <form className="form">
+      <div className="form">
         <div className="input1">
           <div className="title">
             <label id="title">稱謂</label>
@@ -45,7 +63,8 @@ function FormAddress() {
               type="text"
               placeholder="請輸入姓名"
               className="inputFullname"
-              required
+              name="fullName"
+              onChange={infoUpdateHandler}
             />
           </div>
         </div>
@@ -56,8 +75,9 @@ function FormAddress() {
             <input
               type="number"
               placeholder="請輸入行動電話"
-              required
               className="inputPhone"
+              name="phoneNumber"
+              onChange={infoUpdateHandler}
             />
           </div>
           <div className="email">
@@ -66,7 +86,8 @@ function FormAddress() {
               type="email"
               placeholder="請輸入電子信箱"
               className="inputEmail"
-              required
+              name="Email"
+              onChange={infoUpdateHandler}
             />
           </div>
         </div>
@@ -82,11 +103,12 @@ function FormAddress() {
               type="text"
               placeholder="請輸入地址"
               className="inputAddress"
-              required
+              name="address"
+              onChange={infoUpdateHandler}
             />
           </div>
         </div>
-      </form>
+      </div>
     </div>
   );
 }

@@ -1,6 +1,9 @@
 import "../StepProgress/StepProgress.css";
+import { useContext } from "react";
+import StepProgressContext from "./StepProgressContext";
 
-function StepProgress({ formStep }) {
+function StepProgress() {
+  const { formStep } = useContext(StepProgressContext);
   return (
     <div className="stepWrapper">
       <h2 className="progressName">結帳</h2>

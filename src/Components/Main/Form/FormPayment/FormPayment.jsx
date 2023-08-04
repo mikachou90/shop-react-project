@@ -2,18 +2,16 @@ import "./FormPayment.css";
 import FormContext from "../FormContext";
 import { useContext } from "react";
 
-function FormPayment() {
-  const { info, setInfo } = useContext(FormContext);
-
-  function hanlderInpuChange(e) {
-    const { name, value } = e.target;
-    setInfo((prevInfo) => ({ ...prevInfo, [name]: value }));
-  }
+function FormPayment({ isDisplay }) {
+  const { infoUpdateHandler } = useContext(FormContext);
 
   return (
-    <div className="formPaymentWrapper">
+    <div
+      className="formPaymentWrapper"
+      style={{ display: isDisplay ? "block" : "none" }}
+    >
       <h3>付款資訊</h3>
-      <form onSubmit={console.log}>
+      <div>
         <div className="nameBox">
           <label htmlFor="name">持卡人姓名</label>
           <input
@@ -21,7 +19,7 @@ function FormPayment() {
             id="cardName"
             type="text"
             className="inputName"
-            onChange={hanlderInpuChange}
+            onChange={infoUpdateHandler}
           />
         </div>
 
@@ -32,12 +30,12 @@ function FormPayment() {
             name="cardNumber"
             id="cardNumber"
             type="tel"
-            inputmode="numeric"
+            inputMode="numeric"
             pattern="[0-9\s]{13,19}"
-            autocomplete="cc-number"
-            maxlength="19"
+            autoComplete="cc-number"
+            maxLength="19"
             placeholder="xxxx xxxx xxxx xxxx"
-            onChange={hanlderInpuChange}
+            onChange={infoUpdateHandler}
           />
         </div>
 
@@ -50,9 +48,9 @@ function FormPayment() {
                 type="text"
                 name="cardExpDate"
                 placeholder="MM/YY"
-                maxlength="4"
+                maxLength="4"
                 size="2"
-                onChange={hanlderInpuChange}
+                onChange={infoUpdateHandler}
               />
             </div>
           </div>
@@ -60,15 +58,16 @@ function FormPayment() {
           <div className="cvcBox">
             <label htmlFor="cvc">CVC/CCV</label>
             <input
+              name="cvcNumber"
               className="cvcNumber"
               type="number"
               maxLength="3"
               placeholder="123"
-              onChange={hanlderInpuChange}
+              onChange={infoUpdateHandler}
             />
           </div>
         </div>
-      </form>
+      </div>
     </div>
   );
 }
