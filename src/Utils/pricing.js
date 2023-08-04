@@ -3,6 +3,7 @@ const getFormattedPrice = (price) => {
     return new Intl.NumberFormat("zh-TW", {
       style: "currency",
       currency: "NTD",
+      minimumFractionDigits: 0,
       maximumFractionDigits: 0,
     }).format(price);
   } else {
